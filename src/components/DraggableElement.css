@@ -1,0 +1,29 @@
+.my-draggable {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    height: fit;
+    padding: 12px 30px;
+    background-color: #cca;
+  }
+  
+  .buttons {
+    position: absolute;
+    right: -60px;
+    top: 12px;
+    gap: 4px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    border-radius: 50%; 
+  }
+  
+  .child {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 80px; */
+  }
