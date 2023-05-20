@@ -1,9 +1,8 @@
-import React, { useState, useEffect, MouseEvent, ReactNode, useContext } from "react";
+import { useState, useEffect, MouseEvent, ReactNode } from "react";
 import "./DraggableElement.css";
 import Any from "./Any";
 import Box from "./Box";
 import generateRandomColor from "../utils/colors";
-import { EditContext } from "../context/EditContext";
 
 interface Position {
   x: number;
@@ -109,7 +108,7 @@ const Draggable = ({ initialPos, children }: Props) => {
             gap: `${childCount * 60}px`,
           }}
         >
-          {[...Array(childCount)].map((item, idx) => {
+          {[...Array(childCount)].map((_item, idx) => {
             return (
               // <Any key={idx} />
               <Box
